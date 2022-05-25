@@ -1,0 +1,121 @@
+:root {
+  /* grid values */
+
+  /* column calculation (single item width) */
+  --col-calc: calc(100% / 12);
+
+  /* grid negative spacing */
+  --grid-sp-md: -4px; /* gutter = 8 */
+  --grid-sp-lg: -8px; /* gutter = 16 */
+  --grid-sp-xl: -12px; /* gutter = 24 */
+  --grid-sp-xxl: -16px; /* gutter = 32 */
+
+  /* column spacing */
+  --col-sp-md: 4px;
+  --col-sp-lg: 8px;
+  --col-sp-xl: 12px;
+  --col-sp-xxl: 16px;
+
+  /* grid beakpoints */
+  --point-tab: 992px;
+  --point-desk-lg: 1280px;
+}
+
+.record-grid__box {
+  display: flex;
+  box-sizing: border-box;
+  /* direction */
+  &_dir_row {
+    flex-direction: row;
+  }
+  &_dir_column {
+    flex-direction: column;
+  }
+  /* wrap */
+  &_wrap_wrap {
+    flex-wrap: wrap;
+  }
+  &_wrap_nowrap {
+    flex-wrap: nowrap;
+  }
+  /* alignment */
+  &_align_alignStart {
+    align-items: flex-start;
+  }
+  &_align_alignEnd {
+    align-items: flex-end;
+  }
+  &_align_alignStretch {
+    align-items: stretch;
+  }
+  &_align_alignCenter {
+    align-items: center;
+  }
+  &_align_alignBaseline {
+    align-items: baseline;
+  }
+  /* justify  */
+  &_justify_justStart {
+    justify-content: flex-start;
+  }
+  &_justify_justEnd {
+    justify-content: flex-end;
+  }
+  &_justify_justCenter {
+    justify-content: center;
+  }
+  &_justify_justEvenly {
+    justify-content: space-evenly;
+  }
+  &_justify_justBetween {
+    justify-content: space-between;
+  }
+  &_justify_justAround {
+    justify-content: space-around;
+  }
+  /* grid spacing */
+  &_spacing_spacing-md {
+    margin: var(--grid-sp-md);
+  }
+  &_spacing_spacing-md .record-grid__col {
+    padding: var(--col-sp-md);
+  }
+  &_spacing_spacing-lg {
+    margin: var(--grid-sp-lg);
+  }
+  &_spacing_spacing-lg .record-grid__col {
+    padding: var(--col-sp-lg);
+  }
+  &_spacing_spacing-xl {
+    margin: var(--grid-sp-xl);
+  }
+  &_spacing_spacing-xl .record-grid__col {
+    padding: var(--col-sp-xl);
+  }
+  &_spacing_spacing-xxl {
+    margin: var(--grid-sp-xxl);
+  }
+  &_spacing_spacing-xxl .record-grid__col {
+    padding: var(--col-sp-xxl);
+  }
+}
+
+@media (min-width: 992px) {
+  .record-grid__box_spacing_grid-strict {
+    margin: var(--grid-sp-lg);
+  }
+
+  .record-grid__box_spacing_grid-strict .record-grid__col {
+    padding: var(--col-sp-lg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .record-grid__box_spacing_grid-strict {
+    margin: var(--grid-sp-xl);
+  }
+
+  .record-grid__box_spacing_grid-strict .record-grid__col {
+    padding: var(--col-sp-xl);
+  }
+}

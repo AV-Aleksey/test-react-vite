@@ -1,0 +1,19 @@
+@import url('../../../../modules/Container/styles.module.less');
+
+.sideBar {
+    width: 200px;
+    min-height: 250px;
+    margin-right: 32px;
+
+    @media @point-desktop-md {
+        margin-right: 24px;
+    }
+    
+    @media @point-desktop-md, @point-desktop-lg {   
+        width: 48px;
+    }
+
+    @media @point-desktop-xl, @point-desktop-xxl {
+        width: 200px;
+    }
+}

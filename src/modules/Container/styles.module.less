@@ -1,0 +1,38 @@
+@import '../../styles/theme/theme.less';
+
+/*@screen-lg от -1279*/
+@point-desktop-md: ~"only screen and (max-width: @{screen-md-max})";
+/*@screen-lg 1280 - 1439*/
+@point-desktop-lg: ~"only screen and (min-width: @{screen-lg}) and (max-width: @{screen-lg-max})";
+/*@screen-xl 1440 - 1919*/
+@point-desktop-xl: ~"only screen and (min-width: @{screen-xl}) and (max-width: @{screen-xl-max})";
+/*@screen-xxl 1920+*/
+@point-desktop-xxl: ~"only screen and (min-width: @{screen-xxl})";
+
+@content-width-md: 944px;
+@content-width-lg: 1192px;
+@content-width-xl: 1376px;
+@content-width-xxl: 1568px;
+
+.content {
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    min-width: 944px;
+
+    @media @point-desktop-md {
+        width: @content-width-md;
+    }
+
+    @media @point-desktop-lg {
+        width: @content-width-lg;
+    }
+
+    @media @point-desktop-xl {
+        width: @content-width-xl;
+    }
+
+    @media @point-desktop-xxl {
+        width: @content-width-xxl;
+    }
+}
+

@@ -1,0 +1,4 @@
+.wrapGroups {
+    display: flex;
+    flex-direction: column;
+}

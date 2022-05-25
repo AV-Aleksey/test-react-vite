@@ -1,0 +1,92 @@
+.record-carousel__slider {
+  position: relative;
+}
+
+.record-carousel__carousel {
+  overflow: hidden;
+}
+
+.record-carousel__content {
+  position: relative;
+}
+
+.record-carousel__inner {
+  display: flex;
+  white-space: nowrap;
+
+  &_speed_fast {
+    transition: transform 0.3s;
+  }
+  &_speed_normal {
+    transition: transform 0.8s;
+  }
+  &_speed_slow {
+    transition: transform 1.3s;
+  }
+}
+
+.record-carousel__btn {
+  &_prev {
+    top: calc(50% - 20px);
+    left: -14px;
+    z-index: 5;
+    position: absolute;
+  }
+  &_next {
+    top: calc(50% - 20px);
+    z-index: 2;
+    right: -14px;
+    position: absolute;
+  }
+}
+
+.record-carousel__footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.record-carousel__item {
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  &:first-child {
+    padding-left: 0px;
+  }
+
+  &_padding_small {
+    padding: 0 4px;
+  }
+  &_padding_middle {
+    padding: 0 8px;
+  }
+  &_padding_large {
+    padding: 0 16px;
+  }
+}
+
+.record-carousel__blur {
+  position: absolute;
+  width: 5%;
+  z-index: 1;
+  height: 100%;
+  top: 0px;
+
+  &_start {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    left: 0px;
+  }
+  &_end {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    right: 0px;
+  }
+}
+

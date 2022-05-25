@@ -1,0 +1,22 @@
+:root {
+  /* grid values */
+
+  /* column calculation (single item width) */
+  --col-calc: calc(100% / 12);
+
+  /* grid negative spacing */
+  --grid-sp-md: -4px; /* gutter = 8 */
+  --grid-sp-lg: -8px; /* gutter = 16 */
+  --grid-sp-xl: -12px; /* gutter = 24 */
+  --grid-sp-xxl: -16px; /* gutter = 32 */
+
+  /* column spacing */
+  --col-sp-md: 4px;
+  --col-sp-lg: 8px;
+  --col-sp-xl: 12px;
+  --col-sp-xxl: 16px;
+
+  /* grid beakpoints */
+  --point-tab: 992px;
+  --point-desk-lg: 1280px;
+}

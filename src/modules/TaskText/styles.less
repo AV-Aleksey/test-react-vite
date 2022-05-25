@@ -1,0 +1,43 @@
+.record-text-task {
+  display: list-item;
+  margin-left: 11px;
+  padding-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+
+  &::marker {
+    display: list-item;
+    content: "●";
+    font-weight: bold;
+  }
+
+  &_size_middle::marker {
+    font-size: 11px;
+  }
+
+  &_size_large::marker {
+    font-size: 13px;
+  }
+
+  &_module_education::marker {
+    color: #F9AF16;
+  }
+  &_module_efficiency::marker {
+    color: #9EBB46;
+  }
+  &_module_career::marker {
+    color: #F2689C;
+  }
+  &_module_adaptation::marker {
+    color: #A2C3E3;
+  }
+
+  &_weight_normal {
+    font-weight: normal;
+  }
+
+  &_weight_bold {
+    font-weight: bold;
+  }
+}
+

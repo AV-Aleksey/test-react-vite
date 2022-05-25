@@ -1,0 +1,21 @@
+.wrapCube {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.control {
+    padding: 10px;
+}
+
+.controlBtn {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.controlBtn:last-child {
+    margin-right: inherit;
+}
+

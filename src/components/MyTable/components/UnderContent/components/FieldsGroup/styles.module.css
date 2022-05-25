@@ -1,0 +1,13 @@
+.input {
+    width: 250px;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 30px;
+}
+
+.btn span {
+    margin-left: -4px;
+}
+
