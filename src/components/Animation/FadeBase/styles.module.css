@@ -1,0 +1,34 @@
+.cube {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    background-color: brown;
+}
+
+:global .alert-enter {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+:global .alert-enter-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+
+}
+
+:global .alert-exit {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+
+}
+
+:global .alert-exit-active {
+    transform: scale(0.8);
+    opacity: 0;
+    transform: translateX(0.9);
+}

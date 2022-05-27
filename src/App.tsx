@@ -9,6 +9,7 @@ import { DemoTable } from './components/MyTable';
 import { CarouselAntd } from './components/CarouselAntd';
 import { da } from 'date-fns/locale';
 import { FadeIn } from './components/Animation/FadeIn';
+import { FadeBase } from './components/Animation/FadeBase';
 const { Content, Header, Footer } = Layout;
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
 
     return (
         <div style={containerStyle}>
-            <FadeIn />
+            <FadeBase />
         </div>
         
     )
