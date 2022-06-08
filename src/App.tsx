@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles/main.less'
 import { RecordMainPage } from './modules/RecordMainPage/index'
 import { Col, Layout, Menu, Row } from "antd";
@@ -10,11 +10,12 @@ import { CarouselAntd } from './components/CarouselAntd';
 import { da } from 'date-fns/locale';
 import { FadeIn } from './components/Animation/FadeIn';
 import { FadeBase } from './components/Animation/FadeBase';
+import { TestMobx } from './components/TestMobx';
 const { Content, Header, Footer } = Layout;
 
 function App() {
     const data = [];
-
+    const [count, setCount] = useState(() => 1)
     for(let i = 0; i < 100; i++) {
        data.push(i) 
     }
@@ -27,10 +28,12 @@ function App() {
 
     return (
         <div style={containerStyle}>
-            <FadeBase />
+            <TestMobx />
         </div>
         
     )
 }
 
 export default App
+
+
