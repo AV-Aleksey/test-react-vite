@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './styles/main.less'
 import { RecordMainPage } from './modules/RecordMainPage/index'
-import { Col, Layout, Menu, Row } from "antd";
+import { Col, Form, Layout, Menu, Row } from "antd";
 import { TestGrid } from './modules/Grid/TestGrid';
 import { MyInputNumber } from './components/MyInputNumber';
 import { Search } from './components/Search';
@@ -11,6 +11,7 @@ import { da } from 'date-fns/locale';
 import { FadeIn } from './components/Animation/FadeIn';
 import { FadeBase } from './components/Animation/FadeBase';
 import { TestMobx } from './components/TestMobx';
+import { ManyForms } from './components/ManyForms';
 const { Content, Header, Footer } = Layout;
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
 
     return (
         <div style={containerStyle}>
-            <TestMobx />
+            <ManyForms />
         </div>
         
     )
